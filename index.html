@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPredict - Disease Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Disease prediction Model</h1>
+            <p> </p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="info-section">
+            <h2>How It Works</h2>
+            <p>Select your symptoms from the list below and our system will provide a preliminary assessment. 
+               Remember, this is not a substitute for professional medical advice.</p>
+        </section>
+
+        <section class="symptom-selector">
+            <h2>Select Your Symptoms</h2>
+            <div class="symptoms-list" id="symptomsList">
+                <!-- Symptoms will be populated by JavaScript -->
+            </div>
+            <button id="analyzeBtn" class="analyze-btn">Analyze Symptoms</button>
+        </section>
+
+        <section class="results-section hidden" id="resultsSection">
+            <h2>Analysis Results</h2>
+            <div class="results-card">
+                <p id="resultsText">Results will appear here</p>
+                <div class="recommendations" id="recommendations">
+                    <!-- Recommendations will be added by JavaScript -->
+                </div>
+            </div>
+            <button id="resetBtn" class="reset-btn">Start Over</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Disclaimer: This is a demonstration only. Always consult a healthcare professional for medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
